@@ -91,7 +91,7 @@ end
 local function getp(Name)
     Name = Name:lower():gsub("%s", "")
     for _, x in next, plrs:GetPlayers() do
-        if x ~= plrs.LocalPlayer then
+        if not whitelist[x.Name] then
             if x.Name:lower():match(Name) then
                 return x
             elseif x.DisplayName:lower():match("^" .. Name) then
@@ -133,8 +133,7 @@ local Input = Ta:CreateInput({
 })
 
 local Sec2 = Ta:CreateSection("Credits")
-
-local Parag = Ta:CreateParagraph({Title = "Credits", Content = "feariosz0 - the guy who made it | Connor34 - idea discord.gg/RuBYEuCnDQ"})
+local Parag = Ta:CreateParagraph({Title = "Credits", Content = "feariosz0 - the guy who made it | Connor34 - idea. discord.gg/RuBYEuCnDQ"})
 
 --[[Tab]]--
 
