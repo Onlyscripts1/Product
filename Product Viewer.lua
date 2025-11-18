@@ -28,12 +28,12 @@ local Window = Rayfield:CreateWindow({
    },
 
    Discord = {
-      Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
       Invite = "RuBYEuCnDQ", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
       RememberJoins = false -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = true, -- Set this to true to use our key system
+   KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
       Title = "Nameless Hub",
       Subtitle = "Key System",
@@ -134,7 +134,7 @@ local Input = Ta:CreateInput({
 
 local Sec2 = Ta:CreateSection("Credits")
 
-local Parag = Ta:CreateParagraph({Title = "Credits", Content = "feariosz0 - the guy who made it | Connor34 - idea"})
+local Parag = Ta:CreateParagraph({Title = "Credits", Content = "feariosz0 - the guy who made it | Connor34 - idea discord.gg/RuBYEuCnDQ"})
 
 --[[Tab]]--
 
